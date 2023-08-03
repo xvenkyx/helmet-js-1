@@ -14,7 +14,7 @@ app.use(helmet.noSniff());
 
 app.use(helmet.ieNoOpen());
 
-app.use(helmet.useDnsPrefetchControl();
+app.use(helmet.dnsPrefetchControl());
 
 ninetyDaysInSeconds = 90*24*60*60;
 app.use(helmet.hsts({
