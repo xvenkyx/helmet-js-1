@@ -10,6 +10,8 @@ app.use(helmet.frameguard({
 
 app.use(helmet.xssFilter());
 
+app.use(helmet.noSniff());
+
 const PORT = process.env.PORT || 3030;
 
 // app.listen(PORT, () => {
