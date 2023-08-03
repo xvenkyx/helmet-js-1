@@ -12,6 +12,8 @@ app.use(helmet.xssFilter());
 
 app.use(helmet.noSniff());
 
+app.use(helmet.ieNoOpen());
+
 const PORT = process.env.PORT || 3030;
 
 // app.listen(PORT, () => {
